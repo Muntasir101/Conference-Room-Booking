@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Room Booking</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <h1>Conference Room Booking</h1>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="calculation-section p-4">
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="room-type" class="form-label">Choose a Room Type:</label>
+                    <select class="form-control" id="room-type" name="room-type">
+                        <option value="small">Small Room</option>
+                        <option value="medium">Medium Room</option>
+                        <option value="large">Large Room</option>
+                        <option value="executive">Executive Room</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="check-in-date" class="form-label">Please input start date and time:</label>
+                    <input type="date" class="form-control" id="check-in-date" name="check-in-date" required>
+                    <input type="time" class="form-control mt-2" id="check-in-time" name="check-in-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-out-date" class="form-label">Please input end date and time:</label>
+                    <input type="date" class="form-control" id="check-out-date" name="check-out-date" required>
+                    <input type="time" class="form-control mt-2" id="check-out-time" name="check-out-time" required>
+                </div>
+                <button type="button" class="btn btn-primary btn-block" onclick="calculateCost()">Calculate</button>
+            </form>
+            <p class="mt-4" id="result">ESTIMATED BOOKING COSTS: $0.00</p>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Conference Services. All rights reserved.</p>
+            <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

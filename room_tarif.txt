@@ -1,0 +1,53 @@
+Conference Room Booking Rates and Rules
+
+Hourly Rates:
+Small Room
+Hourly Rate: $100 per hour
+
+Medium Room
+Hourly Rate: $150 per hour
+
+Large Room
+Hourly Rate: $200 per hour
+
+Executive Room
+Hourly Rate: $300 per hour
+
+Daily Rates:
+For bookings exceeding 8 hours in a day, daily rates apply instead of hourly rates.
+
+Small Room
+Daily Rate: $800
+
+Medium Room
+Daily Rate: $1200
+
+Large Room
+Daily Rate: $1600
+
+Executive Room
+Daily Rate: $2400
+
+Weekly Rates:
+If the booking duration exceeds 3 days, weekly rates apply instead of daily rates.
+
+
+Small Room
+Weekly Rate: $5600
+
+Medium Room
+Weekly Rate: $8400
+
+Large Room
+Weekly Rate: $11200
+
+Executive Room
+Weekly Rate: $16800
+
+
+Additional Charges:
+Overtime: Any booking exceeding the confirmed duration will be charged at 1.5 times
+the regular hourly rate for each additional hour.
+
+Cancellation: Cancellations made less than 24 hours before the booking
+start time will incur a cancellation fee of 50% of the total booking cost.
