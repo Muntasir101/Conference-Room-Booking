@@ -1,40 +1,188 @@
-/* styles.css */
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f7fa;
     margin: 0;
-}
-
-header {
-    background-color: #007BFF;
-}
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.calculation-section {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
+    color: #333;
 }
 
-.form-label {
-    font-weight: bold;
-    text-align: left;
-    display: block;
+/* Container for main content */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Headings */
+h1 {
+    color: #e2ebe4;
+    margin-bottom: 15px;
+}
+h2 {
+    color: #032921;
+    margin-bottom: 15px;
+}
+
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+label {
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
-#result {
-    font-size: 1.2em;
-    color: #007BFF;
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"] {
+    padding: 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="datetime-local"]:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Button styles */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0056b3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+/* Hidden elements */
+.hidden {
+    display: none;
+}
+
+/* Result messages */
+#confirmation,
+#cost-section,
+#final-cost,
+#cancellation-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f0fe;
+    border-left: 5px solid #0056b3;
+    border-radius: 6px;
+}
+
+/* Error messages */
+#error {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Dropdown styling */
+select {
+    padding: 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 16px; /* Increase font size for better readability */
+    background-color: #fff; /* White background for contrast */
+    appearance: none; /* Remove default dropdown arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat; /* Prevent repeated background */
+    background-position: right 10px center; /* Position of the arrow */
+    background-size: 12px; /* Size of the arrow */
+}
+
+/* Style for when the dropdown is focused */
+select:focus {
+    border-color: #0056b3; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Style for header */
+header {
+    background-color: #170252; /* Darker header background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+nav {
+    margin-top: 10px; /* Space between header text and menu */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the menu items */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make links bold */
+    padding: 5px 10px; /* Padding for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+    background-color: #004494; /* Darker shade on hover */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #170252; /* Same as header */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 15px;
+    position: relative; /* For positioning */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Add styles for the bookings list */
+#bookings-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+#bookings-list li {
+    padding: 10px;
+    border-bottom: 1px solid #d1d1d1; /* Separator between bookings */
+}
+
+#bookings-list li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+.main-content {
+    margin-top: 20px; /* Add space above the main content */
 }
